@@ -42,61 +42,84 @@ Ext.application({
 //        });
 
         Ext.create('Ext.container.Viewport', {
-            layout:'border',
             items:[
                 {
                     region:'north',
                     xtype:'form',
-
-                    title: 'Simple Form',
-                    bodyPadding: 5,
-                    width: 350,
-
-                    // The form will submit an AJAX request to this URL when submitted
-                    url: 'save-form.php',
-
-                    // Fields will be arranged vertically, stretched to full width
-                    layout: 'anchor',
-                    defaults: {
-                        anchor: '100%'
+                    title:'Add Location',
+                    frame:true,
+                    width:550,
+                    bodyPadding:5,
+                    fieldDefaults:{
+                        labelAlign:'right',
+                        labelWidth:90,
+                        msgTarget:'qtip'
                     },
 
-                    // The fields
-                    defaultType: 'textfield',
-                    items: [{
-                        fieldLabel: 'First Name',
-                        name: 'first',
-                        allowBlank: false
-                    },{
-                        fieldLabel: 'Last Name',
-                        name: 'last',
-                        allowBlank: false
-                    }],
+                    items:[
+                        // Contact info
+                        {
+                            xtype:'fieldset',
+                            title:'Location lookup',
+                            defaultType:'textfield',
+                            layout:'anchor',
+                            defaults:{
+                                anchor:'100%'
+                            },
+                            items:[
+                                {
+                                    xtype:'fieldcontainer',
+                                    fieldLabel:'City/state or zipcode',
+                                    labelWidth:150,
+                                    layout:'hbox',
+                                    combineErrors:true,
+                                    defaultType:'textfield',
+                                    defaults:{
+                                        hideLabel:'true'
+                                    },
+                                    items:[
+                                        {
+                                            name:'location',
+                                            flex:2,
+                                            emptyText:'City/state or zipcode',
+                                            allowBlank:false
+                                        },
+                                        {
+                                            xtype:'button',
+                                            text:'Add location'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
 
                     // Reset and Submit buttons
-                    buttons: [{
-                        text: 'Reset',
-                        handler: function() {
-                            this.up('form').getForm().reset();
-                        }
-                    }, {
-                        text: 'Submit',
-                        formBind: true, //only enabled once the form is valid
-                        disabled: true,
-                        handler: function() {
-                            var form = this.up('form').getForm();
-                            if (form.isValid()) {
-                                form.submit({
-                                    success: function(form, action) {
-                                        Ext.Msg.alert('Success', action.result.msg);
-                                    },
-                                    failure: function(form, action) {
-                                        Ext.Msg.alert('Failed', action.result.msg);
-                                    }
-                                });
+                    buttons:[
+                        {
+                            text:'Reset',
+                            handler:function () {
+                                this.up('form').getForm().reset();
                             }
+//                    }, {
+//                        text: 'Add',
+//                        formBind: true, //only enabled once the form is valid
+//                        disabled: true,
+//                        handler: function() {
+//                            var form = this.up('form').getForm();
+//                            if (form.isValid()) {
+//                                form.submit({
+//                                    success: function(form, action) {
+//                                        Ext.Msg.alert('Success', action.result.msg);
+//                                    },
+//                                    failure: function(form, action) {
+//                                        Ext.Msg.alert('Failed', action.result.msg);
+//                                    }
+//                                });
+//                            }
+//                        }
                         }
-                    }]
+                    ]
 
 //
 //                    layout:'anchor',

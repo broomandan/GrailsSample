@@ -79,7 +79,8 @@
 				%{--}--}%
 			%{--}--}%
 		%{--</style>--}%
-	    <g:javascript src="ext-4.0/ext-debug.js"/>
+	    <g:javascript src="extjs-4.1.0/ext-debug.js"/>
+        <link rel="stylesheet" href="${resource(dir: 'js/extjs-4.1.0/resources/css', file: 'ext-all.css')}" type="text/css">
 	    <g:javascript src="App.js"/>
     </head>
 	%{--<body>--}%
