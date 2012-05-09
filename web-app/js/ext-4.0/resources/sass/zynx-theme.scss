@@ -1,0 +1,68 @@
+﻿/*
+ * Custom Ext JS theme for Zynx Health
+ * /
+
+/*
+NOTE about x-nlg and x-nbr
+--------------------------
+ExtJS 4 attaches x-nlg and x-nbr CSS classes to the BODY element when CSS 3 linear grading and/or border radius features (respectively) are absent.
+Its CSS rules incorporate these classes for styling that is dependent on these features.
+
+Some of our styling needs to override theirs, but it needs to do so in multiple browsers, including those that DO and DO NOT support these CSS 3 features.
+Because the Ext 4 selectors include these CSS classes, they are more specific than our selectors when running in browsers where these classes are present.
+Hence, for these styles, we have to do the following:
+
+.x-whatever-class {
+   some-style: some-value; }
+
+.x-nbr {
+   .x-whatever-class {
+      some-style: some-value; } }
+
+The first one works when there's no "x-nbr" on the BODY element, but the second one is needed when there IS an "x-nbr."
+*/
+
+$include-default: false;
+
+$theme-name: 'zynx';
+$font-family: arial, tahoma, verdana, sans-serif;
+
+@import 'ext4/zynx/variables';
+@import 'ext4/default/all';
+
+@include extjs-boundlist;
+@include extjs-button;
+@include extjs-btn-group;
+@include extjs-datepicker;
+@include extjs-colorpicker;
+@include extjs-menu;
+@include extjs-grid;
+@include extjs-form;
+    @include extjs-form-field;
+    @include extjs-form-fieldset;
+    @include extjs-form-checkboxfield;
+    @include extjs-form-checkboxgroup;
+    @include extjs-form-triggerfield;
+    @include extjs-form-htmleditor;
+@include extjs-panel;
+@include extjs-qtip;
+@include extjs-slider;
+@include extjs-progress;
+@include extjs-toolbar;
+@include extjs-window;
+@include extjs-messagebox;
+@include extjs-tabbar;
+@include extjs-tab;
+@include extjs-tree;
+//@include extjs-drawcomponent;
+@include extjs-viewport;
+
+
+
+@import 'ext4/zynx/mixins';
+@import 'ext4/zynx/ux/checkbox';
+@import 'ext4/zynx/widgets';
+
+
+
+

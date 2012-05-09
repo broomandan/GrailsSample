@@ -1,0 +1,9 @@
+/*
+ * Consolidated place for mixins that are shared across multiple files, those used within a single file are declared within
+ */
+@mixin workflow-sprite($background-position) {
+  background-image: theme-background-image($theme-name, 'shared/workflow-sprite.png');
+  background-position: $background-position;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,19 @@
+/* CSS definitions for Internet Explorer version 8 and below. */
+
+html.ie_hacks 
+{
+   #reportSelectionPanel div
+   {
+     background-color: #DDDDDD;
+	 font-family: Arial, Helvetica, Sans-serif;
+	 font-size: 24px;
+   }
+   #reportOptionsPanel div 
+   {
+     background-color: #FFFFFF;
+   }
+   #messageContainer
+   {
+      width: 562px;
+   }
+}

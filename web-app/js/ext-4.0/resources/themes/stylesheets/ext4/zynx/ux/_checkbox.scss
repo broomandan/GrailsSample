@@ -1,0 +1,17 @@
+.#{$prefix}grid-checkheader {
+  height: 14px;
+  background-image: theme-background-image($theme-name, 'grid/unchecked.gif');
+  background-position: 50% -2px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.#{$prefix}grid-checkheader-checked {
+  background-image: theme-background-image($theme-name, 'grid/checked.gif');
+}
+
+.#{$prefix}grid-checkheader-editor {
+  .#{$prefix}form-cb-wrap {
+    text-align: center;
+  }
+}

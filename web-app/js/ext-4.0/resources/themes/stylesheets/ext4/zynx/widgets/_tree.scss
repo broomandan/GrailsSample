@@ -1,0 +1,26 @@
+
+/* Tree Node Icons */
+
+.tree-folder {
+  background-image: theme-background-image($theme-name, 'tree/folder.gif') !important;
+}
+
+.tree-folder-full {
+  background-image: theme-background-image($theme-name, 'tree/folder-full.gif') !important;
+}
+
+.tree-folder-content {
+  background-image: theme-background-image($theme-name, 'tree/folder-content.png') !important;
+}
+
+.x-resizable-pinned .x-resizable-handle-east {
+  background-image: theme-background-image($theme-name, 'sizer/grips.png') !important;
+  background-repeat: no-repeat;
+  background-color: $panel-base-color;
+}
+
+.#{$prefix}tree-drop-ok-append .#{$prefix}dd-drop-icon {
+   background-image: theme-background-image($theme-name, 'tree/drop-yes.gif');
+}
+
+

@@ -1,0 +1,68 @@
+.workflowsForContent {
+   position: relative;
+   height: 20px;
+
+   .workflows {
+      padding: 3px 6px;
+
+      &.active {
+         position: absolute;
+         left: 0px;
+         background-color: #fc6;
+      }
+
+      &.completed {
+         position: absolute;
+         left: 22px;
+         color: white;
+         background-color: #7030a0;
+      }
+   }
+}
+
+.workflowsForContentTooltip {
+   width: 250px;
+   padding-top: 5px;
+
+   .legendForContentTooltip {
+      float: right;
+      width: 100px;
+      font-weight: bold;
+
+      .number {
+         padding: 3px 10px;
+      }
+
+      &.Active {
+         .number {
+            background-color: #fc6;
+         }
+         .name {
+            padding: 3px 20px;
+            background-color: #fe9;
+         }
+      }
+
+      &.Completed {
+         .number {
+            color: white;
+            background-color: #7030a0;
+         }
+         .name {
+            padding: 3px 5px;
+            background-color: #ae90cb;
+         }
+      }
+   }
+
+   h1 {
+      font-size: 14px;
+   }
+
+   ul {
+      list-style: none;
+      padding-top: 10px;
+      margin-top: 10px;
+      border-top: thin black solid;
+   }
+}

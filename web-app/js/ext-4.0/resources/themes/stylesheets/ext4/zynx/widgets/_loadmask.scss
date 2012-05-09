@@ -1,0 +1,27 @@
+.#{$prefix}mask-msg {
+	height: 40px;
+	width: 107px;
+	div {
+		background-position: 54px center;
+	}
+	&.activating-mask {
+  		div {
+  			background-position: 60px;
+  		}
+	}
+}
+
+.#{$prefix}ie7 {
+	.#{$prefix}mask-msg {
+      div {
+         padding-top: 10px;
+      }
+   }
+}
+
+.#{$prefix}ie6 {
+   .#{$prefix}mask-loading {
+      border: none;
+      padding-top: 10px;
+   }
+}

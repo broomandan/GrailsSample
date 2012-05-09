@@ -1,0 +1,265 @@
+.#{$prefix}grid-header-ct {
+  background-image: none;
+  background-color: $zynx-header-background-color;
+  border: 1px solid $zynx-border-color !important;
+}
+
+.#{$prefix}column-header {
+  background-image: none; 
+  background-color: transparent;
+}
+
+@mixin grid-header {
+  background-image: none;
+  background-color: $grid-header-background-color;
+}
+
+.#{$prefix}column-header-trigger {
+    background-color: $grid-header-background-color;
+}
+
+.#{$prefix}column-header-over,
+.#{$prefix}column-header-sort-ASC,
+.#{$prefix}column-header-sort-DESC {
+  @include grid-header;
+}
+
+.#{$prefix}nlg {
+  .#{$prefix}grid-header-ct,
+  .#{$prefix}column-header {
+    @include grid-header;
+  }
+
+  .#{$prefix}column-header-over,
+  .#{$prefix}column-header-sort-ASC,
+  .#{$prefix}column-header-sort-DESC {
+    @include grid-header;
+  }
+  
+  .#{$prefix}grid-row-selected {
+    .#{$prefix}grid-cell-special {
+      background-image: none;
+    }
+  } 
+}
+
+.#{$prefix}column-header {
+  border-right-color: #EEEEEE;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.#{$prefix}column-header-last {
+  border-right: none;
+}
+
+.#{$prefix}panel {
+  .#{$prefix}grid-body {
+    border: 1px solid #000000 !important; 
+    border-top: none !important;
+  }
+}
+    
+/* Grid Controls */
+.gridControls {
+  font-size: 11px;
+  width: 100%;
+  padding: 0px 0px 5px 0px;
+  h3 {
+    display: inline;
+    color: #333;
+    font-size: 11px;
+  }
+  .groupLabel, .groups, .clears, .filterLabel, .filters {
+    float: left;
+    display: block;
+    padding-right: 5px;
+  }
+  .groups, .clears {
+    padding-right: 10px;
+  }
+  span {
+    &.filters .filter {
+      float: left;
+      margin-left: 8px;
+      padding-left: 18px;
+      background-repeat: no-repeat;
+      background-image: theme-background-image($theme-name, 'button/Small_Close_Button.png'); 
+    &.grid-counter {
+      float: right;
+      padding-right: 5px;
+    }
+    &.filters .filter {
+      &:hover {
+        background-image: theme-background-image($theme-name, 'button/Small_Close_Button_Hover.png');
+      }
+      &:active {
+        background-image:  theme-background-image($theme-name, 'button/Small_Close_Button.png');
+        }
+      }
+    }
+  }
+}
+
+.#{$prefix}grid-group-hd {
+  padding-top: 0px;
+ .#{$prefix}grid-cell-inner {
+    padding: 4px;
+  }
+}
+
+.#{$prefix}grid-group-body {
+  .#{$prefix}grid-row {
+    .zynx-spanned-cell {
+      background-color: $grid-row-cell-background;
+    }
+    .zynx-spanned-cell-alt {
+      background-color: $grid-row-cell-alt-background;
+    }
+  }
+}
+
+.content-name {
+  font-weight: bold;
+  font-size: 12px;
+  white-space: normal; 
+}
+
+.#{$prefix}grid-row {
+   .#{$prefix}grid-cell {
+      p {
+         font-size: 11px;
+      }
+   }
+}
+
+/* Intuitive Grid */
+
+@mixin cell-borders($bgcolor) {
+  .x-grid-cell {
+    border-bottom: $bgcolor 1px solid;
+    border-top: $bgcolor 1px solid;
+  }
+  .step-name-cell {
+    border-left: $bgcolor 2px solid; 
+  }
+  .content-name-cell {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+.grid-inactive-step-cell {
+  @include cell-borders(grey);
+}
+
+.grid-active-step-cell {
+  @include cell-borders(green);
+}
+
+.grid-late-step-cell {
+  @include cell-borders(red);
+}
+
+.grid-blocked-step-cell {
+  @include cell-borders(#8E3C31);
+}
+
+.#{$prefix}grid-cell-setStepOwner {
+  .#{$prefix}grid-checkheader{
+    background: 0 0 theme-background-image($theme-name, 'form/radio.gif') no-repeat;
+    width: 13px;
+    height: 13px;
+    margin-left: 25px;
+  }
+  .#{$prefix}grid-checkheader-checked {
+    background-position: 0 -13px;
+  }
+}
+
+.#{$prefix}grid-dirty-cell {
+  background-image: none;
+}
+
+.ux-filtered-column {
+  .#{$prefix}column-header-text {
+    font-style: italic;
+  }
+}
+
+.grid-empty {
+  color: Gray;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 5px;
+}
+
+/*
+ * Styles for the 'Select Start Date' screen, to be removed or redone when screen is redesigned
+ */
+.start-date {
+  font-weight: bold;
+  color: #FFFFFF;
+  float: right;
+  width: 110px;
+  padding-top: 12px;
+}
+
+.date-field {
+  width: 110px;
+  float: right;
+}
+
+.start-header, .end-header {
+  width: 30px;
+  display: block;
+  float: left;
+  clear: left;
+  font-weight: bold;
+  color: White; 
+}
+
+.start-value, .end-value {
+  display: block;
+  color: White; 
+}
+
+.content-list-tooltip {
+   font-size: 12px;
+   color: #999999;
+   display: inline;
+   font-weight: bold;
+   margin-left: 10px;
+}
+
+.stepStatus {
+   .reviewsCompleted {
+      float: right;
+      background-color: $zynx-header-background-color;
+      color: white;
+      padding: 3px;
+      cursor: pointer;
+      @include border-radius(5px, 5px);
+   }
+}
+
+.reviewsCompletedMenu {
+   .reviewsForStepPopup {
+      padding: 6px 24px 6px 6px;
+   }
+   .x-menu-icon-separator {
+      border: none;
+      background: none;
+   }
+   .closeButton {
+      float: right;
+      background-repeat: no-repeat;
+      background-image: theme-background-image($theme-name, 'button/Small_Close_Button.png');
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+   }
+}

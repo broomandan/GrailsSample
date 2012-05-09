@@ -1,0 +1,79 @@
+/* HtmlEditor Toolbar */
+
+.#{$prefix}html-editor-tb {
+  .#{$prefix}toolbar, .#{$prefix}btn-tl, .#{$prefix}btn-tr, .#{$prefix}btn-tc, .#{$prefix}btn-ml, .#{$prefix}btn-mr, .#{$prefix}btn-mc, .#{$prefix}btn-bl, .#{$prefix}btn-br, .#{$prefix}btn-bc {
+    background-color: #d8d8d8;
+    border: 1px transparent;
+  }
+  .#{$prefix}btn-over {
+    .#{$prefix}btn-tl, .#{$prefix}btn-tr, .#{$prefix}btn-tc, .#{$prefix}btn-ml, .#{$prefix}btn-mr, .#{$prefix}btn-mc, .#{$prefix}btn-bl, .#{$prefix}btn-br, .#{$prefix}btn-bc {
+      background-color: transparent;
+      border: 1px solid $zynx-secondary-border-color;
+    }
+  }
+}
+
+/* Datepicker */
+.#{$prefix}monthpicker-yearnav-prev-over {
+    background-position: 0 -105px;
+}
+
+.#{$prefix}monthpicker-yearnav-next-over {
+    background-position: 0 -120px;
+}
+
+
+.#{$prefix}monthpicker-yearnav {
+  button {
+    background-color: $datepicker-button-background-color;
+  }
+}
+
+.#{$prefix}monthpicker-buttons {
+  .#{$prefix}btn {
+    background-color: $datepicker-button-background-color;
+    border: none;
+  }
+}
+
+.#{$prefix}datepicker-month {  
+	.#{$prefix}btn-split-right {
+		background-image: theme-background-image($theme-name, $datepicker-month-arrow-image) !important;
+		padding-right: 12px;
+	}
+ }
+
+table.#{$prefix}datepicker-inner {
+  border-top: $datepicker-border;
+}
+
+/* validation icons */
+.#{$prefix}form-invalid-tip-body {
+  background-image: none;
+  padding-left: 0px;
+}
+
+.#{$prefix}form-file-wrap {
+    position: relative;
+    height: 22px;
+}
+.#{$prefix}form-file-wrap .x-form-file-input {
+	position: absolute;
+	right: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+   filter: alpha(opacity=0);
+	z-index: 2;
+    height: 22px;
+}
+.#{$prefix}form-file-wrap .x-form-file-btn {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.#{$prefix}form-file-wrap .x-form-file-text {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    color: #777;
+}

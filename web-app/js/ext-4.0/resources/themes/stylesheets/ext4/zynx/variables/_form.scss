@@ -1,0 +1,35 @@
+$form-field-background-image: false;
+$tip-body-padding: 3px 3px 3px 5px;
+$form-label-font-weight: normal;
+$form-field-invalid-background-image: false;
+
+$fieldset-border-width: 0px;
+
+$datepicker-border-color:  #1B376C;
+$datepicker-border: 1px solid $datepicker-border-color;
+$datepicker-selected-background-color: $zynx-selected-background-color;
+
+$datepicker-background-color: #FFFFFF;
+$datepicker-button-background-color: $zynx-active-element-background-color;
+$datepicker-selected-item-background-color: $datepicker-selected-background-color;
+$datepicker-selected-item-border-color: $datepicker-border-color;
+
+$datepicker-header-background-gradient: null;
+$datepicker-header-background-color: $datepicker-button-background-color;
+
+$datepicker-th-background-gradient: null;
+$datepicker-th-background-color: $zynx-header-background-color;
+$datepicker-th-border-bottom-color: $datepicker-border-color;
+$datepicker-th-font: 10px;
+$datepicker-th-color: #FFFFFF;
+
+$datepicker-footer-background-gradient: null;
+$datepicker-footer-background-color: #FFFFFF;
+$datepicker-footer-border-top-color: $datepicker-border-color;
+
+$datepicker-monthpicker-item-selected-background-color: $datepicker-selected-background-color;
+$datepicker-monthpicker-item-selected-border: $datepicker-border-color;
+$datepicker-monthpicker-item-color: #000000;
+
+$datepicker-tool-sprite-image: 'panel/tool-sprites.gif';
+

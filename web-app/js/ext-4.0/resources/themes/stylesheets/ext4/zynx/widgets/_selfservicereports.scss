@@ -1,0 +1,94 @@
+#deliveryTimelineNote {
+  font-style: italic;
+  span {
+    font-weight: bold; } }
+
+#reportSelectionPanel {
+  border-bottom-color: #d6d1d1;
+  border-bottom-style: ridge;
+  border-bottom-width: 3px; }
+
+#reportSamplePanel {
+  h3 {
+    color: #17385b; }
+  border-bottom-color: #d6d1d1;
+  border-bottom-style: ridge;
+  border-bottom-width: 3px; }
+
+#reportSelectionPanel div:not(.x-btn) {
+  background-color: #DDDDDD; }
+
+#reportOptionsPanel div:not(.x-btn) {
+  background-color: #FFFFFF; }
+
+.ssrButton {
+  border-radius: 5px;
+  button {
+    height: 24px;
+    border: 0;
+    background: url(/authorspace/v2.0/Scripts/ext-4.0/resources/themes/images/zynx/shared/sprite.png) no-repeat;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-bottom: 2px;
+    &:hover {
+      cursor: pointer;
+      padding-bottom: 2px; } } }
+
+.reportSampleButtonHide button{
+   background-position: -345px -240px;
+   color: #227AD3;
+}
+
+.reportSampleButtonShow button{
+   background-position: -345px -414px;
+   color: #227AD3;
+}
+
+#reportRequestButton button {
+  padding-left: 13px;
+  padding-right: 0px;
+  background-position: -1235px 0px;
+  &:hover {
+    background-position: -1235px -37px; } }
+
+#reportSuggestionButton button {
+  background-position: -26px 0px;
+  &:hover {
+    background-position: -26px -37px; } }
+
+.availableReportsRadioButton {
+  font-size: large; }
+
+#reportSuggestionTitle {
+  padding-top: 3px;  
+  font-size: large;
+  vertical-align: middle; }
+
+#reportSuggestionDescription {
+  position: absolute;
+  top: 29px; }
+
+#reportSuggestionButton {
+  position: absolute;
+  top: 60px; }
+
+.reportRequestConfirmation {
+  .confirmationMessage {
+    background-color: #F9F4BD;
+    font-family: Georgia;
+    }
+  .failureMessage {
+    background-color: #FF0000;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: white;
+    font-family: Georgia;
+    }
+   }
+
+.reportRequestConfirmation p {
+   font-size: medium;}
+
+#messageContainer {
+   width: 580px;
+}

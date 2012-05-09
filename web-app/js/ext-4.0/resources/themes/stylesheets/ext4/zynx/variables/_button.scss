@@ -1,0 +1,30 @@
+$button-small-border-radius: 0px;
+$button-medium-border-radius: 0px;
+$button-large-border-radius: 0px;
+$button-small-border-width: 0;
+$button-medium-border-width: 0;
+$button-large-border-width: 0;
+$button-default-background-color: $zynx-active-element-background-color;
+$button-default-background-color-disabled: $button-default-background-color;
+$button-default-background-color-over: $zynx-secondary-border-color;
+$button-default-color: #FFFFFF;
+$button-small-font-weight: bold;
+$button-medium-font-weight: bold;
+$button-large-font-weight: bold;
+$button-tree-border-color: #444;
+$button-tree-hover-color: #55A8F8;
+
+$button-toolbar-background-color: $button-default-background-color;
+$button-toolbar-background-color-over: $button-default-background-color-over;
+$button-toolbar-color: $button-default-color;
+$button-toolbar-background-color-disabled: $button-default-background-color;
+
+$button-default-background-gradient: null;
+$button-default-background-gradient-over: null;
+$button-default-background-gradient-focus: null;
+$button-default-background-gradient-pressed: null;
+$button-default-background-gradient-disabled: null;
+$button-toolbar-background-gradient: null;
+$button-toolbar-background-gradient-over: null;
+$button-toolbar-background-gradient-focus: null;
+$button-toolbar-background-gradient-disabled: null;

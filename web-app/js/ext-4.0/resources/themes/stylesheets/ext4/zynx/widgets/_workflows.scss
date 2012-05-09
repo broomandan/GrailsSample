@@ -1,0 +1,62 @@
+.workflow-header {
+  background-color: $zynx-active-element-background-color;
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.workflow-table {
+  border-collapse: collapse;
+  .workflow-row {
+    height: 24px;
+    font-size: 12px;
+  }
+  .workflow-row-alt {
+    @extend .workflow-row;
+    background-color: #C7D8EF;
+  }
+  .workflow-definitions-delete {
+    span, a {
+      padding-left: 18px; 
+    }
+  }
+}
+
+.workflow-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: $zynx-header-color;
+  float: left;
+  padding-right: 20px;
+}
+
+#add-workflow-button,
+.action-separator {
+  float: left;
+}
+
+.workflow-warning-icon {
+  background-color: transparent;
+  background-image: theme-background-image($theme-name, 'icons/warning_icon.gif');
+  background-repeat: no-repeat;
+  height: 16px;
+  padding-left: 20px;
+}
+
+.#{$prefix}ie div#moreThan500ReviewersMsg {
+   background-color: transparent;
+}
+
+.#{$prefix}ie div#moreThan500ReviewersMsg td {
+   background-color: transparent;
+}
+
+.#{$prefix}ie div#moreThan500ReviewersMsg div {
+  background-color: transparent;
+  background-image: url('../../resources/themes/images/zynx/icons/warning_icon.gif');
+  background-repeat: no-repeat;
+  height: 16px;
+  padding-left: 20px; 
+}
+

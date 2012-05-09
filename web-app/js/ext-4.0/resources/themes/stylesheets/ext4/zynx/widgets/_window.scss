@@ -1,0 +1,125 @@
+/* Window */
+.#{$prefix}window-header {
+  padding: $window-header-padding !important;
+}
+
+.#{$prefix}nbr {
+  .#{$prefix}window-header-default-top-mc {
+    padding: $window-header-padding !important;
+  }
+  .#{$prefix}window-default {
+    padding: 10px !important;
+  }
+}
+
+.#{$prefix}tool {
+  .#{$prefix}tool-close {
+    @include workflow-sprite(0 -87px);
+  }
+}
+
+.#{$prefix}message-box {
+  .#{$prefix}toolbar-footer {
+    padding-bottom: 7px;
+  }
+  .#{$prefix}window-header-text-default {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .ext-mb-question {
+    @include workflow-sprite(0 -39px);
+    height: 47px !important;
+  }
+  .ext-mb-warning {
+    @include workflow-sprite(0 -582px);
+    height: 32px !important;
+  }
+}
+
+.x-message-box.new-age-message-box {
+   border-radius: 6px;
+
+  .x-window-header-default-top {
+    background-color: white;
+    border-bottom: 1px solid lightgrey !important;
+    height: 30px;
+  }
+
+  .x-btn-default-small-mc {
+    background-color: transparent;
+    padding: 0px;
+  }
+
+  .x-btn-default-small {
+    padding: 0px;
+    background-color: transparent;
+    height: 20px;
+
+    button {
+      background: $contentexplorer-sprite-button-default;
+      border-radius: 2px 2px;
+    }
+    button:hover {
+      background: $contentexplorer-sprite-button-focus;
+      .x-btn-inner {
+         color: $contentexplorer-dialog-btn-focus-textcolor;
+      }
+    }
+    button:active {
+      background: $contentexplorer-sprite-button-click;
+    }
+
+    .x-btn-inner {
+      color: $contentexplorer-dialog-btn-textcolor;
+    }
+  }
+  
+  .x-btn-default-small-noicon {
+    height: 20px;
+    
+    button {
+     height: 20px;
+    }
+  }
+
+  .x-btn-default-small-focus {
+    background-color: transparent;
+
+    button {
+      background: $contentexplorer-sprite-button-focus;
+    }
+
+    .x-btn-inner {
+      color: $contentexplorer-dialog-btn-focus-textcolor;
+    }
+  }
+
+  .x-window-header-default-top-mc {
+    background-color: white;
+  }
+
+  .x-window-header-default {
+    background-color: white;
+  }
+  .x-window-header-text-default {
+    color: black;
+  }
+
+  .x-tool img.x-tool-close {
+    background: $contentexplorer-sprite-button-close-circle;
+    height: 17px;
+    width: 16px;
+  }
+
+  .ext-mb-warning {
+    background: $contentexplorer-sprite-warning-triangle;
+    height: 40px !important;
+    width: 43px;
+    display: inline-block;
+  }
+
+  .x-container {
+   display: inline-block;
+   width: 330px;
+  }
+}
