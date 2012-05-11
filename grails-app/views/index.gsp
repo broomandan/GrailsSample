@@ -79,7 +79,12 @@
 				%{--}--}%
 			%{--}--}%
 		%{--</style>--}%
-	    <g:javascript src="extjs-4.1.0/ext-debug.js"/>
+	    <g:javascript src="extjs-4.1.0/ext-all-debug.js"/>
+	    <g:javascript src="app/view/Viewport.js"/>
+	    <g:javascript src="app/model/Location.js"/>
+        <g:javascript src="app/store/Locations.js"/>
+        <g:javascript src="/app/view/locationList.js"/>
+        <g:javascript src="app/controller/Locations.js"/>
         <link rel="stylesheet" href="${resource(dir: 'js/extjs-4.1.0/resources/css', file: 'ext-all.css')}" type="text/css">
 	    <g:javascript src="App.js"/>
     </head>

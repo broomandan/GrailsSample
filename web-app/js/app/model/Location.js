@@ -1,4 +1,4 @@
-Ext.define('Weather.web.Location', {
+Ext.define('Weather.web.model.Location', {
     extend: 'Ext.data.Model',
     fields: [
         { name:'city', type:'string' },
