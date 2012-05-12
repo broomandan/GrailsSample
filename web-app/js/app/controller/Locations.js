@@ -7,7 +7,7 @@ Ext.define('Weather.web.controller.Locations', {
     views:['locationList'],
     stores:['Locations'],
     init:function () {
-        console.log('Location controller was initialized');
+        console.log('Location controller initialized');
         var locationList=this.refs[0].selector;
         var selectors = {}
         selectors[locationList]={render: this.onPanelRendered};

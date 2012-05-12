@@ -7,21 +7,25 @@
  */
 Ext.define('Weather.web.store.Locations', {
     extend:'Ext.data.Store',
-//    alias : 'Weather.web.store.locations',
+    alias : 'store.locations',
 //    id:'locationStore',
 //    requires:['Weather.web.Location'],
     model:'Weather.web.model.Location',
-    proxy: {
-        type: 'ajax',
-        url : '/users.json',
-        reader: {
-            type: 'json',
-            root: 'users'
-        }
-    },
-    autoLoad: true,
+//    proxy:{
+//        type:'json',
+//        url : '/locations.json',
+//        reader: {
+//            type: 'json',
+//            root: 'locations'
+//        }
+//    },
+    autoLoad:true,
+    //fields:['city','state','zip'],
     data:[
         { city:'Sherman Oaks', state:'CA', zip:'91403' },
-        { city:'Los Angeles', state:'CA', zip:'90025' }
+        { city:'Los Angeles', state:'CA', zip:'90025' },
+        { city:'Encino', state:'CA', zip:'91346' },
+        { city:'Bverly Hills', state:'CA', zip:'90210' },
+        { city:'Malibu', state:'CA', zip:'90xxx' }
     ]
 });

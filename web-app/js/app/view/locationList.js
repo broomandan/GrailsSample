@@ -13,17 +13,16 @@ Ext.define('Weather.web.view.locationList', {
 
     initComponent:function () {
         this.store = Ext.create('Weather.web.store.Locations');
-        var imageTpl = new Ext.XTemplate(
-            '<tpl for=".">',
-            '<div style="margin-bottom: 10px;" class="thumb-wrap">',
-            '<br/><span>{city},{state}</span>',
-            '</div>',
-            '</tpl>'
-        );
-
         this.callParent(arguments);
     },
-    tpl:this.imageTpl,
+    tpl:new Ext.XTemplate(
+        '<tpl for=".">',
+            '<div style="margin-bottom: 10px;" class="thumb-wrap">',
+                '<br/><span>{city},{state}</span>',
+            '</div>',
+        '</tpl>'
+    ),
     itemSelector:'div.thumb-wrap',
-    emptyText:'No locations are available'
+    emptyText:'No locations are available',
+    renderTo:Ext.getBody()
 });
