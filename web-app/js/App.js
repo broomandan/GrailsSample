@@ -1,19 +1,15 @@
-//Ext.Loader.setConfig({
-//    enabled:true,
-//    paths:{
-//        //'Ext.ux': 'Scripts/ux',
-//        //'Zynx.ce.Overrides': 'Scripts/Overrides.js',
-//        //'Zynx.ux': '../Scripts/Extjs-extensions'
-//    }
-//});
+Ext.Loader.setConfig({
+    enabled:true,
+    paths:{
+        //'Ext.ux': 'Scripts/ux',
+    }
+});
 
 Ext.application({
     name:'Weather.web',
-    appFolder:'app',
+    appFolder:'js/app',
     autoCreateViewport:true,
     controllers:['Locations'],
-    //requires: ['Zynx.ce.Overrides', 'Zynx.ce.model.Converters', 'Zynx.ce.util.Util'],
-
     launch:function () {
     }
 });

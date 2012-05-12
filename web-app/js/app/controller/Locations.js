@@ -3,6 +3,7 @@ Ext.define('Weather.web.controller.Locations', {
     refs:[
         {ref:'locationList', selector:'viewport > [ref=locationList]'}
     ],
+//    requires:['Weather.web.store.Locations'],
     models:['Location'],
     views:['locationList'],
     stores:['Locations'],

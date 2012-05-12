@@ -7,6 +7,7 @@
  */
 Ext.define('Weather.web.view.Viewport', {
     extend:'Ext.container.Viewport',
+//    requires: ['Weather.web.view.locationList'],
     items:[
         {
             region:'north',
