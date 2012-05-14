@@ -1,11 +1,11 @@
 /**
  * Created with IntelliJ IDEA.
- * User: BroomandRo01
+ * User: Robert Broomandan
  * Date: 5/11/12
  * Time: 10:56 AM
  * To change this template use File | Settings | File Templates.
  */
-Ext.define('Weather.web.view.locationList', {
+Ext.define('Weather.web.view.LocationList', {
     extend:'Ext.view.View',
     alias:'widget.locationList',
     title:'All Locations',
@@ -18,7 +18,7 @@ Ext.define('Weather.web.view.locationList', {
     tpl:new Ext.XTemplate(
         '<tpl for=".">',
             '<div style="margin-bottom: 10px;" class="thumb-wrap">',
-                '<br/><span>{city},{state}</span>',
+                '<br/><span>{city},{state} {zip}</span>',
             '</div>',
         '</tpl>'
     ),

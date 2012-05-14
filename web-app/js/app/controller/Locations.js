@@ -5,10 +5,9 @@ Ext.define('Weather.web.controller.Locations', {
         {ref:'location-form', selector:'viewport > [ref=location-form]'}
     ],
     models:['Location'],
-    views:['locationList'],
+    views:['LocationList'],
     stores:['Locations'],
     init:function () {
-        console.log('Location controller initialized');
         var locationList = this.refs[0].selector;
         var locationForm = this.refs[1].selector;
         var selectors = {};
@@ -21,22 +20,16 @@ Ext.define('Weather.web.controller.Locations', {
             click:function () {
                 console.log('click');
             },
-            render:function () {
-                console.log('render-form');
-            },
-            addlocation:Ext.bind(this.addLocation,this)
+
+            addlocation:Ext.bind(this.addLocation, this)
         };
         this.control(selectors);
         this.callParent();
     },
     addLocation:function (location) {
         console.log(location);
-        var store=this.getLocationList().store;
+        var store = this.getLocationList().store;
         store.add(location);
         store.sync();
-
-    },
-    onPanelRendered:function () {
-        console.log('The panel was rendered');
     }
 });

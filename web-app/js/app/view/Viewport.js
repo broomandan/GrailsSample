@@ -1,12 +1,13 @@
 /**
  * Created with IntelliJ IDEA.
- * User: BroomandRo01
+ * User: Robert Broomandan
  * Date: 5/11/12
  * Time: 2:16 PM
  * To change this template use File | Settings | File Templates.
  */
 Ext.define('Weather.web.view.Viewport', {
     extend:'Ext.container.Viewport',
+    requires:['Weather.web.util.Util'],
     items:[
         {
             region:'north',
@@ -52,22 +53,44 @@ Ext.define('Weather.web.view.Viewport', {
                                 {
                                     xtype:'button',
                                     text:'Add location',
-                                    // formBind:true, //only enabled once the form is valid
-                                    // disabled:true,
+                                    formBind:true, //only enabled once the form is valid
+                                    disabled:true,
                                     handler:function () {
                                         var parent = this.up('form'),
                                             form = parent.getForm();
 
                                         if (form.isValid()) {
-//                                                console.log('valid', this);
+                                            var locationName = form.findField('location').getValue();
 
-                                            // TODO: resolve the city/state or zipcode
-                                            // on resolve success, Add to local storage
                                             var location = {
-                                                city:'Santa Monica',
-                                                state:'CA',
-                                                zipCode:'90404'
+                                                city:'City',
+                                                state:'State',
+                                                zipCode:'zipcode'
                                             };
+                                            if (Weather.web.util.Util.isValidZipCode(locationName)) {
+                                                // TODO: resolve the zipcode
+                                                location.zip = locationName;
+                                                console.log('zipcode found');
+                                            }
+                                            else {
+                                                // TODO: resolve the city/state
+                                                var cityState = locationName.split(',');
+                                                console.log('city state found');
+
+                                                if (cityState.length > 0) {
+                                                    if(cityState[0])
+                                                        location.city = cityState[0];
+                                                    if(cityState[1])
+                                                        location.state = cityState[1];
+                                                    console.log('set');
+                                                }
+                                                else{
+                                                    form.isValid=false;
+                                                }
+                                            }
+
+                                            // on resolve success, Add to local storage
+
                                             parent.fireEvent('addlocation', location);
 //                                            form.submit({
 //                                                success:function (form, action) {
