@@ -8,13 +8,13 @@
 Ext.define('Weather.web.view.locationList', {
     extend:'Ext.view.View',
     alias:'widget.locationList',
-//    requires:['Weather.web.store.Locations'],
     title:'All Locations',
 
     initComponent:function () {
         this.store = Ext.create('Weather.web.store.Locations');
-        this.callParent(arguments);
+        this.callParent();
     },
+
     tpl:new Ext.XTemplate(
         '<tpl for=".">',
             '<div style="margin-bottom: 10px;" class="thumb-wrap">',

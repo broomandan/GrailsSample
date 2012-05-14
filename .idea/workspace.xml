@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b115b70-fcd0-4b83-bfa7-8175af224cdc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="E:\MyGitHub\GrailsSample\dddddddddddddddd" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grails1-grailsPlugins.iml" afterPath="$PROJECT_DIR$/Grails1-grailsPlugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/app/controller/Locations.js" afterPath="$PROJECT_DIR$/web-app/js/app/controller/Locations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/app/store/Locations.js" afterPath="$PROJECT_DIR$/web-app/js/app/store/Locations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/app/view/Viewport.js" afterPath="$PROJECT_DIR$/web-app/js/app/view/Viewport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/app/view/locationList.js" afterPath="$PROJECT_DIR$/web-app/js/app/view/locationList.js" />
     </list>
     <ignored path="Grails1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,11 +78,14 @@
       <file leaf-file-name="Viewport.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/js/app/view/Viewport.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="36" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.0">
+            <state line="105" column="36" selection-start="4133" selection-end="4133" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#310#3271#0" expanded="false" />
-                <element signature="e#500#615#0" expanded="false" />
-                <element signature="e#636#2990#0" expanded="false" />
+                <element signature="e#259#3973#0" expanded="false" />
+                <element signature="e#482#597#0" expanded="false" />
+                <element signature="e#618#3692#0" expanded="false" />
+                <marker date="1337026308128" expanded="true" signature="2945:3464" placeholder="{...}" />
+                <marker date="1337026308128" expanded="true" signature="3029:3181" placeholder="{...}" />
+                <marker date="1337026308128" expanded="true" signature="3265:3416" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -91,8 +94,10 @@
       <file leaf-file-name="Locations.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/js/app/store/Locations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="55" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="12" column="55" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1337017516383" expanded="true" signature="434:440" placeholder="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,7 +105,7 @@
       <file leaf-file-name="locationList.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/js/app/view/locationList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="81" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+            <state line="12" column="81" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,7 +114,7 @@
       <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="45" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.040189125">
+            <state line="81" column="36" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.643026">
               <folding />
             </state>
           </provider>
@@ -590,7 +595,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19802731" sideWeight="0.8102564" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19954476" sideWeight="0.8102564" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.21880342" order="2" side_tool="true" content_ui="tabs" />
@@ -599,7 +604,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39984825" sideWeight="0.6700855" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24886191" sideWeight="0.8102564" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1897436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1897436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -693,26 +698,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/app/view/Viewport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="36" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.0">
+        <state line="105" column="36" selection-start="4133" selection-end="4133" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#310#3271#0" expanded="false" />
-            <element signature="e#500#615#0" expanded="false" />
-            <element signature="e#636#2990#0" expanded="false" />
+            <element signature="e#259#3973#0" expanded="false" />
+            <element signature="e#482#597#0" expanded="false" />
+            <element signature="e#618#3692#0" expanded="false" />
+            <marker date="1337026308128" expanded="true" signature="2945:3464" placeholder="{...}" />
+            <marker date="1337026308128" expanded="true" signature="3029:3181" placeholder="{...}" />
+            <marker date="1337026308128" expanded="true" signature="3265:3416" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/app/store/Locations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="55" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dddddddddddddddd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="12" column="55" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1337017516383" expanded="true" signature="434:440" placeholder="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -753,7 +756,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/app/view/locationList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="81" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+        <state line="12" column="81" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -767,7 +770,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="45" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.040189125">
+        <state line="81" column="36" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.643026">
           <folding />
         </state>
       </provider>

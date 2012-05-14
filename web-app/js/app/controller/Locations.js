@@ -1,19 +1,40 @@
 Ext.define('Weather.web.controller.Locations', {
     extend:'Ext.app.Controller',
     refs:[
-        {ref:'locationList', selector:'viewport > [ref=locationList]'}
+        {ref:'locationList', selector:'[ref=location-list]'},
+        {ref:'location-form', selector:'viewport > [ref=location-form]'}
     ],
-//    requires:['Weather.web.store.Locations'],
     models:['Location'],
     views:['locationList'],
     stores:['Locations'],
     init:function () {
         console.log('Location controller initialized');
-        var locationList=this.refs[0].selector;
-        var selectors = {}
-        selectors[locationList]={render: this.onPanelRendered};
-        this.control(selectors );
+        var locationList = this.refs[0].selector;
+        var locationForm = this.refs[1].selector;
+        var selectors = {};
+        selectors[locationList] = {
+            beforerender:function () {
+                console.log('render-list');
+            } };
+
+        selectors[locationForm] = {
+            click:function () {
+                console.log('click');
+            },
+            render:function () {
+                console.log('render-form');
+            },
+            addlocation:Ext.bind(this.addLocation,this)
+        };
+        this.control(selectors);
         this.callParent();
+    },
+    addLocation:function (location) {
+        console.log(location);
+        var store=this.getLocationList().store;
+        store.add(location);
+        store.sync();
+
     },
     onPanelRendered:function () {
         console.log('The panel was rendered');

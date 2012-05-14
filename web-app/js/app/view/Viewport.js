@@ -7,11 +7,11 @@
  */
 Ext.define('Weather.web.view.Viewport', {
     extend:'Ext.container.Viewport',
-//    requires: ['Weather.web.view.locationList'],
     items:[
         {
             region:'north',
             xtype:'form',
+            ref:'location-form',
             title:'Add Location',
             frame:true,
             width:550,
@@ -55,16 +55,28 @@ Ext.define('Weather.web.view.Viewport', {
                                     // formBind:true, //only enabled once the form is valid
                                     // disabled:true,
                                     handler:function () {
-                                        var form = this.up('form').getForm();
+                                        var parent = this.up('form'),
+                                            form = parent.getForm();
+
                                         if (form.isValid()) {
-                                            form.submit({
-                                                success:function (form, action) {
-                                                    Ext.Msg.alert('Success', action.result.msg);
-                                                },
-                                                failure:function (form, action) {
-                                                    Ext.Msg.alert('Failed', action.result.msg);
-                                                }
-                                            });
+//                                                console.log('valid', this);
+
+                                            // TODO: resolve the city/state or zipcode
+                                            // on resolve success, Add to local storage
+                                            var location = {
+                                                city:'Santa Monica',
+                                                state:'CA',
+                                                zipCode:'90404'
+                                            };
+                                            parent.fireEvent('addlocation', location);
+//                                            form.submit({
+//                                                success:function (form, action) {
+//                                                    Ext.Msg.alert('Success', action.result.msg);
+//                                                },
+//                                                failure:function (form, action) {
+//                                                    Ext.Msg.alert('Failed', action.result.msg);
+//                                                }
+//                                            });
                                         }
                                     }
                                 }
@@ -88,7 +100,7 @@ Ext.define('Weather.web.view.Viewport', {
         {
             region:'center',
             xtype:'locationList',
-            ref:'locationList',
+            ref:'location-list',
             layout:'border'
         }
     ]
